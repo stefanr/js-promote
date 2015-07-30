@@ -1,0 +1,19 @@
+{
+  "name": "promote",
+  "version": "0.0.1-alpha.1",
+  "description": "JavaScript type promotion",
+  "author": {
+    "name": "Stefan Rumzucker",
+    "email": "rumzucker@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanr/node-promote.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0"
+  }
+}
