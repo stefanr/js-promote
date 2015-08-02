@@ -38,7 +38,7 @@ define(["exports"], function (exports) {
    */
 
   function promote(obj, promotype, opts) {
-    if (this) {
+    if (this !== undefined && this !== null) {
       var _ref = [this, obj, promotype];
       obj = _ref[0];
       promotype = _ref[1];
@@ -55,7 +55,7 @@ define(["exports"], function (exports) {
 
   function promoteSync(obj, promotype, opts) {
     try {
-      if (this) {
+      if (this !== undefined && this !== null) {
         var _ref2 = [this, obj, promotype];
         obj = _ref2[0];
         promotype = _ref2[1];

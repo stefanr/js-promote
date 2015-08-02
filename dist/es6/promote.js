@@ -34,7 +34,7 @@ function _promote(obj, promotype, opts) {
  */
 
 function promote(obj, promotype, opts) {
-  if (this) {
+  if (this !== undefined && this !== null) {
     [obj, promotype, opts] = [this, obj, promotype];
   }
   return new Promise(resolve => {
@@ -48,7 +48,7 @@ function promote(obj, promotype, opts) {
 
 function promoteSync(obj, promotype, opts) {
   try {
-    if (this) {
+    if (this !== undefined && this !== null) {
       [obj, promotype, opts] = [this, obj, promotype];
     }
     _promote(obj, promotype, opts);

@@ -29,7 +29,7 @@ function _promote(obj: object, promotype: callable, opts?: object): callable {
  * promote
  */
 export function promote(obj: object, promotype: callable, opts?: object): Promise {
-  if (this) {
+  if (this !== undefined && this !== null) {
     [obj, promotype, opts] = [this, obj, promotype];
   }
   return new Promise((resolve) => {
@@ -42,7 +42,7 @@ export function promote(obj: object, promotype: callable, opts?: object): Promis
  */
 export function promoteSync(obj: object, promotype: callable, opts?: object): boolean {
   try {
-    if (this) {
+    if (this !== undefined && this !== null) {
       [obj, promotype, opts] = [this, obj, promotype];
     }
     _promote(obj, promotype, opts);

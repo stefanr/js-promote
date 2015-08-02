@@ -95,6 +95,14 @@ let bar = new One("bar");
 );
 ```
 
+```sh
+> babel-node examples/one-two
+foo
+  name: foo²
+bar
+  name: bar²
+```
+
 ### HTTP server with promoted response
 
 ```js
@@ -127,6 +135,11 @@ let server = new HttpServer((req, res) => {
 server.listen(8080, () => {
   console.log("Server running at http://localhost:8080/");
 });
+```
+
+```sh
+> babel-node examples/http
+Server running at http://localhost:8080/
 ```
 
 ## License
