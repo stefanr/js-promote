@@ -2,6 +2,8 @@
 
 > Promote objects to alter or enhance their functionality.
 
+[![promote](https://raw.githubusercontent.com/stefanr/node-promote/gh-pages/images/promote.png)](https://www.npmjs.com/package/promote)
+
 ## Installation
 
 ```
