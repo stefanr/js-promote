@@ -1,0 +1,8 @@
+#
+# .npmignore
+#
+
+# --------------------------------------
+/examples
+/.editorconfig
+/gulpfile.babel.js
