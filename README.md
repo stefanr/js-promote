@@ -1,14 +1,5 @@
-# promote
-
-> Promote objects to alter or enhance their functionality.
-
-[![promote](https://raw.githubusercontent.com/stefanr/node-promote/gh-pages/images/promote.png)](https://www.npmjs.com/package/promote)
-
-## Installation
-
-```
-npm install promote --save
-```
+# [![promote][promote-img]][promote-url]
+**JavaScript Type Promotion.**
 
 ## Usage
 
@@ -22,24 +13,24 @@ import {promote} from "promote";
 
 **promote(obj: object, promotype: callable, opts?: object): Promise**
 - **obj**: object  
-  An object, not `undefined` or `null`
+- An object, not `undefined` or `null`
 - **promotype**: callable  
-  The type to which the given object should be promoted to
+- The type to which the given object should be promoted to
 - **opts**: object
   - **unsafe**: boolean = `false`  
-    `true` = Also allow promotion for incompatible types  
+  - `true` = Also allow promotion for incompatible types  
   - **strict**: boolean = `false`  
-    `true` = The object will be checked if it's already an instance of the given type
+  - `true` = The object will be checked if it's already an instance of the given type
 
 **promoteSync(obj: object, promotype: callable, opts?: object): boolean**
 - **obj**: object  
-  @see `promote()`
+- @see `promote()`
 - **promotype**: callable  
-  @see `promote()`
+- @see `promote()`
 - **opts**: object  
-  @see `promote()`
+- @see `promote()`
   - **silent**: boolean = `false`  
-    `true` = No exceptions will be thrown
+  - `true` = No exceptions will be thrown
 
 ### Function bind (ES7)
 
@@ -57,7 +48,6 @@ if (thing::promoteSync(SuperThing)) {
 ```
 
 ## Examples
-
 ### One-Two
 
 ```js
@@ -144,6 +134,5 @@ server.listen(8080, () => {
 Server running at http://localhost:8080/
 ```
 
-## License
-
-MIT
+[promote-img]: https://raw.githubusercontent.com/stefanr/node-promote/gh-pages/images/promote.png
+[promote-url]: https://www.npmjs.com/package/promote
