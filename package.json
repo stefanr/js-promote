@@ -1,11 +1,8 @@
 {
   "name": "promote",
   "version": "0.1.0",
-  "description": "JavaScript type promotion",
-  "author": {
-    "name": "Stefan Rumzucker",
-    "email": "rumzucker@gmail.com"
-  },
+  "description": "JavaScript Type Promotion.",
+  "author": "Stefan Rumzucker",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stefanr/node-promote.git"
