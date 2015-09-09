@@ -3,6 +3,9 @@
 #
 
 # --------------------------------------
+/build
+/docs
 /examples
 /.editorconfig
+/.natronrc
 /gulpfile.babel.js
