@@ -2,9 +2,6 @@
  * promote
  */
 
-/**
- * _promote
- */
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32,10 +29,6 @@ function _promote(obj, promotype, opts) {
   return otype;
 }
 
-/**
- * promote
- */
-
 function promote(obj, promotype, opts) {
   if (this !== undefined && this !== null) {
     var _ref = [this, obj, promotype];
@@ -47,10 +40,6 @@ function promote(obj, promotype, opts) {
     return resolve(obj, promotype, _promote(obj, promotype, opts));
   });
 }
-
-/**
- * promoteSync
- */
 
 function promoteSync(obj, promotype, opts) {
   try {
@@ -70,7 +59,6 @@ function promoteSync(obj, promotype, opts) {
   }
 }
 
-/**
- * default
- */
 exports["default"] = promote;
+
+promote.sync = promoteSync;

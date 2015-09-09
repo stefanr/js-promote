@@ -2,9 +2,6 @@
  * promote
  */
 
-/**
- * _promote
- */
 "use strict";
 
 export { promote };
@@ -29,10 +26,6 @@ function _promote(obj, promotype, opts) {
   return otype;
 }
 
-/**
- * promote
- */
-
 function promote(obj, promotype, opts) {
   if (this !== undefined && this !== null) {
     [obj, promotype, opts] = [this, obj, promotype];
@@ -41,10 +34,6 @@ function promote(obj, promotype, opts) {
     return resolve(obj, promotype, _promote(obj, promotype, opts));
   });
 }
-
-/**
- * promoteSync
- */
 
 function promoteSync(obj, promotype, opts) {
   try {
@@ -61,7 +50,5 @@ function promoteSync(obj, promotype, opts) {
   }
 }
 
-/**
- * default
- */
 export default promote;
+promote.sync = promoteSync;

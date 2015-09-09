@@ -2,9 +2,6 @@
  * promote
  */
 
-/**
- * _promote
- */
 function _promote(obj: object, promotype: callable, opts?: object): callable {
   opts = opts || {};
   if (obj === undefined || obj === null) {
@@ -25,9 +22,6 @@ function _promote(obj: object, promotype: callable, opts?: object): callable {
   return otype;
 }
 
-/**
- * promote
- */
 export function promote(obj: object, promotype: callable, opts?: object): Promise {
   if (this !== undefined && this !== null) {
     [obj, promotype, opts] = [this, obj, promotype];
@@ -37,9 +31,6 @@ export function promote(obj: object, promotype: callable, opts?: object): Promis
   });
 }
 
-/**
- * promoteSync
- */
 export function promoteSync(obj: object, promotype: callable, opts?: object): boolean {
   try {
     if (this !== undefined && this !== null) {
@@ -55,7 +46,5 @@ export function promoteSync(obj: object, promotype: callable, opts?: object): bo
   }
 }
 
-/**
- * default
- */
 export default promote;
+promote.sync = promoteSync;
