@@ -6,6 +6,7 @@
 /build
 /docs
 /examples
+/test
 /.editorconfig
 /.natronrc
 /gulpfile.babel.js
