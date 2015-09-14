@@ -1,7 +1,7 @@
 /*
  * promote
  */
-var lib = require("./dist/cjs/promote");
+var lib = require("./dist/cjs");
 
 module.exports = lib.promote;
 module.exports.promote = lib.promote;

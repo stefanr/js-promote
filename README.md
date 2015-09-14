@@ -1,5 +1,7 @@
 # [![promote][promote-img]][promote-url]
-**JavaScript Type Promotion.**
+**JavaScript Type Promotion**
+
+[![npm][npm-img]][npm-url]
 
 ## Usage
 
@@ -135,4 +137,6 @@ Server running at http://localhost:8080/
 ```
 
 [promote-img]: https://raw.githubusercontent.com/stefanr/node-promote/gh-pages/images/promote.png
-[promote-url]: https://www.npmjs.com/package/promote
+[promote-url]: https://npmjs.org/package/promote
+[npm-img]: https://img.shields.io/npm/v/promote.svg
+[npm-url]: https://npmjs.org/package/promote

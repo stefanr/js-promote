@@ -9,4 +9,4 @@
 /test
 /.editorconfig
 /.natronrc
-/gulpfile.babel.js
+/*.tgz
