@@ -1,7 +1,7 @@
 # [![promote][promote-img]][promote-url]
 **JavaScript Type Promotion**
 
-[![npm][npm-img]][npm-url]
+[![npm][npm-img]][npm-url] [![build status][travis-img]][travis-url]
 
 ## Usage
 
@@ -140,3 +140,5 @@ Server running at http://localhost:8080/
 [promote-url]: https://npmjs.org/package/promote
 [npm-img]: https://img.shields.io/npm/v/promote.svg
 [npm-url]: https://npmjs.org/package/promote
+[travis-img]: https://travis-ci.org/stefanr/node-promote.svg
+[travis-url]: https://travis-ci.org/stefanr/node-promote
