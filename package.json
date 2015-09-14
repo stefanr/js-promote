@@ -8,7 +8,7 @@
     "url": "git+https://github.com/stefanr/node-promote.git"
   },
   "scripts": {
-    "build": "natron build",
+    "build": "npm --prefix build run build",
     "build-install": "npm --prefix build install",
     "test": "npm --prefix test test",
     "test-install": "npm --prefix test install"
